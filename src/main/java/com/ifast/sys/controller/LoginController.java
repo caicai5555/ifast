@@ -51,7 +51,7 @@ public class LoginController extends AdminBaseController {
         model.addAttribute("name", getUser().getName());
         model.addAttribute("username", getUser().getUsername());
         FileDO fileDO = fileService.selectById(getUser().getPicId());
-        model.addAttribute("picUrl", fileDO == null ? "/img/photo_s.jpg" : fileDO.getUrl());
+        model.addAttribute("picUrl", fileDO == null ? "/img/photo_s.png" : fileDO.getUrl());
         return "index_v1";
     }
 
