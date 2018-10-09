@@ -63,14 +63,18 @@ var closeAllSubDisplays = function() {
   $(".flowExtendedView").hide();
 }
 
-var nodeClickCallback = function(event, model, node) {
+/*var nodeClickCallback = function(event, model, node) {
   console.log("Node clicked callback");
 
   var target = event.currentTarget;
   var type = node.type;
   var flowId = node.parent.flow;
   var jobId = node.id;
-  
+
+  contextURL="";
+  projectName="";
+
+
   var requestURL = contextURL + "/manager?project=" + projectName + "&flow=" + flowId + "&job=" + jobId;
   var menu = [];
 
@@ -105,7 +109,63 @@ var nodeClickCallback = function(event, model, node) {
       {title: "Center Job", callback: function() {model.trigger("centerNode", node)}}
     ];
   }
+  console.log(contextMenuView);
+  console.log($("#contextMenu"))
+
   contextMenuView.show(event, menu);
+}*/
+
+
+var nodeClickCallback = function(event, model, node) {
+    console.log("Node clicked callback");
+
+    var target = event.currentTarget;
+    var type = node.type;
+    var flowId = node.parent.flow;
+    var jobId = node.id;
+
+    contextURL="";
+    projectName="";
+
+
+    var requestURL = contextURL + "/manager?project=" + projectName + "&flow=" + flowId + "&job=" + jobId;
+    var menu = [];
+
+    if (type == "flow") {
+        var flowRequestURL = contextURL + "/manager?project=" + projectName + "&flow=" + node.flowId;
+        if (node.expanded) {
+            menu = [{title: "Collapse Flow...", callback: function() {model.trigger("collapseFlow", node);}}];
+        }
+        else {
+            menu = [{title: "Expand Flow...", callback: function() {model.trigger("expandFlow", node);}}];
+        }
+
+        $.merge(menu, [
+            //  {title: "View Properties...", callback: function() {openJobDisplayCallback(jobId, flowId, event)}},
+            {break: 1},
+            {title: "Open Flow...", callback: function() {window.location.href=flowRequestURL;}},
+            {title: "Open Flow in New Window...", callback: function() {window.open(flowRequestURL);}},
+            {break: 1},
+            {title: "Open Properties...", callback: function() {window.location.href=requestURL;}},
+            {title: "Open Properties in New Window...", callback: function() {window.open(requestURL);}},
+            {break: 1},
+            {title: "Center Flow", callback: function() {model.trigger("centerNode", node);}}
+        ]);
+    }
+    else {
+        menu = [
+            //  {title: "View Properties...", callback: function() {openJobDisplayCallback(jobId, flowId, event)}},
+            //  {break: 1},
+            {title: "查看表结构", callback: function() {alert("表结构");}},
+            {title: "数据统计", callback: function() {alert("数据统计");}},
+            {break: 1},
+            {title: "azkaban任务调度", callback: function() {model.trigger("centerNode", node)}}
+        ];
+    }
+    console.log(contextMenuView);
+    console.log($("#contextMenu"))
+
+    contextMenuView.show(event, menu);
 }
 
 var jobClickCallback = function(event, model, node) {

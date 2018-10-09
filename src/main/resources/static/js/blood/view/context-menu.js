@@ -14,7 +14,7 @@
  * the License.
  */
 
-//$.namespace('azkaban');
+$.namespace('azkaban');
 
 azkaban.ContextMenuView = Backbone.View.extend({
   events: {
@@ -113,5 +113,7 @@ azkaban.ContextMenuView = Backbone.View.extend({
 var contextMenuView;
 $(function() {
   contextMenuView = new azkaban.ContextMenuView({el:$('#contextMenu')});
+  console.log("wwwww");
+  console.log(contextMenuView)
   contextMenuView.hide();
 });
