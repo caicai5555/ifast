@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.ifast.sys.dao.UserRoleDao">
+<mapper namespace="com.missfresh.sys.dao.UserRoleDao">
 
-	<select id="findListByUserId" resultType="com.ifast.sys.domain.RoleDO">
+	<select id="findListByUserId" resultType="com.missfresh.sys.domain.RoleDO">
 		select * from sys_role r
 		left join sys_user_role ur on r.id = ur.roleId
 		left join sys_user u on ur.userId = u.id

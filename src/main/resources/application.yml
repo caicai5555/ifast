@@ -34,7 +34,7 @@ spring:
       enabled: true
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*Mapper.xml
-  typeAliasesPackage: com.ifast.**.domain
+  typeAliasesPackage: com.missfresh.**.domain
   global-config:
     id-type: 2
     field-strategy: 1
