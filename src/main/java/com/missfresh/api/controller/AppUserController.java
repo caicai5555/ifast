@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.*;
  *  基于jwt实现的API测试类
  * </pre>
  * 
- * <small> 2018年4月27日 | Aron</small>
+ * <small> 2018年4月27日 | caigl@missfresh.cn</small>
  */
 @RestController
 @RequestMapping("/api/user/")

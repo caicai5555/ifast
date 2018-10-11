@@ -6,7 +6,7 @@ import lombok.Data;
  * <pre>
  * </pre>
  * 
- * <small> 2018年4月26日 | Aron</small>
+ * <small> 2018年4月26日 | caigl@missfresh.cn</small>
  */
 @Data
 public class UserLoginDTO {

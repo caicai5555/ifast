@@ -17,7 +17,7 @@ import com.missfresh.common.utils.SpringContextHolder;
  * <pre>
  * ifast 入口
  * </pre>
- * <small> 2018年3月22日 | Aron</small>
+ * <small> 2018年3月22日 | caigl@missfresh.cn</small>
  */
 @EnableTransactionManagement
 @ServletComponentScan
@@ -30,7 +30,7 @@ public class Application {
 	/**
 	 * <pre>
 	 * </pre>
-	 * <small> 2018年3月22日 | Aron</small>
+	 * <small> 2018年3月22日 | caigl@missfresh.cn</small>
 	 *
 	 * @param args
 	 */

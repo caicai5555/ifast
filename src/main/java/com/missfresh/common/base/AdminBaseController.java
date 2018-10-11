@@ -16,7 +16,7 @@ import com.missfresh.sys.domain.UserDO;
  * <pre>
  * </pre>
  * 
- * <small> 2018年2月25日 | Aron</small>
+ * <small> 2018年2月25日 | caigl@missfresh.cn</small>
  */
 public abstract class AdminBaseController {
 
@@ -43,7 +43,7 @@ public abstract class AdminBaseController {
      * 自动获取分页参数，返回分页对象page
      * </pre>
      * 
-     * <small> 2018年4月15日 | Aron</small>
+     * <small> 2018年4月15日 | caigl@missfresh.cn</small>
      * 
      * @param e
      * @return

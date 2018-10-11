@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * <pre>
  *
  * </pre>
- * <small> 2018/8/23 16:36 | Aron</small>
+ * <small> 2018/8/23 16:36 | caigl@missfresh.cn</small>
  */
 @Component
 @ConfigurationProperties(prefix = "ifast.swagger")

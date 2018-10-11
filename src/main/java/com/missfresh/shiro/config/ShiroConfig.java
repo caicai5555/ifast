@@ -44,7 +44,7 @@ import java.util.*;
  * . ShiroFilterFactoryBean 注册
  * 
  * </pre>
- * <small> 2018年4月18日 | Aron</small>
+ * <small> 2018年4月18日 | caigl@missfresh.cn</small>
  */
 @Configuration
 public class ShiroConfig {

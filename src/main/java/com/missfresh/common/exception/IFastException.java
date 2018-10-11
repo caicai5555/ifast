@@ -5,7 +5,7 @@ package com.missfresh.common.exception;
  * 应用运行时异常，统一抛此类
  * </pre>
  * 
- * <small> 2018年4月6日 | Aron</small>
+ * <small> 2018年4月6日 | caigl@missfresh.cn</small>
  */
 public class IFastException extends RuntimeException {
 

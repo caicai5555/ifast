@@ -12,7 +12,7 @@ import java.util.Map;
  * <pre>
  * Jackson工具类
  * </pre>
- * <small> 2018/8/21 17:08 | Aron</small>
+ * <small> 2018/8/21 17:08 | caigl@missfresh.cn</small>
  */
 
 public class JSONUtils {

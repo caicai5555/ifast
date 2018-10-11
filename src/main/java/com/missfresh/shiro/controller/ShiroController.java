@@ -11,7 +11,7 @@ import com.missfresh.common.utils.Result;
  * <pre>
  * </pre>
  * 
- * <small> 2018年5月1日 | Aron</small>
+ * <small> 2018年5月1日 | caigl@missfresh.cn</small>
  */
 @RestController
 @RequestMapping("/shiro")

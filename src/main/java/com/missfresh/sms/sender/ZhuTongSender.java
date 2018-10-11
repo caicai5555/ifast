@@ -1,6 +1,6 @@
 package com.missfresh.sms.sender;
 
-import com.missfresh.api.exception.IFastApiException;
+import com.missfresh.api.exception.MissfreshApiException;
 import com.missfresh.common.type.EnumErrorCode;
 import com.missfresh.common.utils.CodecUtils;
 import com.missfresh.common.utils.DateUtils;
@@ -20,7 +20,7 @@ import java.util.Date;
  * 助通短信
  * 文档地址请参考 http://www.ztinfo.cn/page/help
  * </pre>
- * <small> 2018/8/31 19:02 | Aron</small>
+ * <small> 2018/8/31 19:02 | caigl@missfresh.cn</small>
  */
 @Component
 public class ZhuTongSender implements SmsSender {
@@ -49,7 +49,7 @@ public class ZhuTongSender implements SmsSender {
         }
         if(!"1".equals(res)){
             log.warn("【SMS】发送失败,手机号码：{}, 请求结果：{}", mobile, res);
-            throw new IFastApiException(EnumErrorCode.apiSmsSendFailed.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiSmsSendFailed.getCodeStr());
         }
         log.info("【SMS】发送短信成功， mobile:{},code:{}", mobile, code);
     }
@@ -92,7 +92,7 @@ public class ZhuTongSender implements SmsSender {
         String content = properties.getScenes().get(scene);
         if(StringUtils.isBlank(content)){
             log.warn("【SMS】 - 根据scene查找content，数据不存在");
-            throw new IFastApiException(EnumErrorCode.apiSmsSendFailed.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiSmsSendFailed.getCodeStr());
         }
         return content;
     }

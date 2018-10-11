@@ -18,7 +18,7 @@ import java.util.Collection;
 /**
  * <pre>
  * </pre>
- * <small> 2018年5月1日 | Aron</small>
+ * <small> 2018年5月1日 | caigl@missfresh.cn</small>
  */
 public class IFastModularRealm extends ModularRealmAuthenticator {
 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>血缘关系</title>
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport">
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<link rel="stylesheet/less" type="text/css" href="/css/blood/less/azkaban-graph.less" />
+<link rel="stylesheet/less" type="text/css" href="/css/blood/less/context-menu.less" />
+<link rel="stylesheet/less" type="text/css" href="/css/blood/less/flow.less" />
+</head>
+<body>
+	<div class="panel panel-default">
+		<input id="source_table_name" name="source_table_name" th:value="${source_table_name}"  type="hidden">
+		<input id="source_db_name" name="source_db_name" th:value="${source_db_name}"  type="hidden">
+		<div class="panel-heading">血缘关系图</div>
+		<div class="container-full container-fill" id="graphView">
+			<div class="col-content">
+				<div  id="svgDiv" class="well well-clear well-sm graph-container">
+					<svg id="flow-graph" xmlns="http://www.w3.org/2000/svg" version="1.1" shape-rendering="optimize-speed" text-rendering="optimize-speed">
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div id="contextMenu"></div>
+
+	</div>
+</body>
+
+
+<script type="text/javascript" src="/js/blood/jquery.min.js"></script>
+<script type="text/javascript" src="/js/blood/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/js/blood/namespace.js"></script>
+<script type="text/javascript" src="/js/blood/less.min.js"></script>
+<script type="text/javascript" src="/js/blood/morris.min.js"></script>
+<script type="text/javascript" src="/js/blood/raphael.min.js"></script>
+<script type="text/javascript" src="/js/blood/underscore-1.4.4-min.js"></script>
+<script type="text/javascript" src="/js/blood/dust-full-2.2.3.min.js"></script>
+<script type="text/javascript" src="/js/blood/backbone-0.9.10-min.js"></script>
+<script type="text/javascript" src="/js/blood/underscore-1.4.4-min.js"></script>
+<script type="text/javascript" src="/js/blood/jquery.svg.min.js"></script>
+<script type="text/javascript" src="/js/blood/jquery.svganim.min.js"></script>
+<script type="text/javascript" src="/js/blood/jquery.svgfilter.min.js"></script>
+
+<script type="text/javascript" src="/js/blood/util/svgutils.js"></script>
+<script type="text/javascript" src="/js/blood/util/svg-navigate.js"></script>
+<script type="text/javascript" src="/js/blood/util/layout.js"></script>
+<script type="text/javascript" src="/js/blood/util/flow-loader.js"></script>
+
+<script type="text/javascript" src="/js/blood/model/svg-graph.js"></script>
+<script type="text/javascript" src="/js/blood/view/svg-graph.js"></script>
+
+<script type="text/javascript" src="/js/blood/view/context-menu.js"></script>
+<script type="text/javascript" src="/js/appjs/metadata/relationInfo/data_line.js"></script>
+
+</html>

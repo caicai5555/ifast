@@ -6,7 +6,7 @@ import com.missfresh.sys.domain.UserDO;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 public interface UserDao extends BaseDao<UserDO> {
 	

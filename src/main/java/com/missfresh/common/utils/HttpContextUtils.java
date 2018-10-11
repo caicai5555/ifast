@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
  * 
  * <pre>
  * </pre>
- * <small> 2018年1月15日 | Aron</small>
+ * <small> 2018年1月15日 | caigl@missfresh.cn</small>
  */
 public class HttpContextUtils {
 	public static HttpServletRequest getHttpServletRequest() {

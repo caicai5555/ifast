@@ -1,12 +1,12 @@
 package com.missfresh.sms.support;
 
-import com.missfresh.api.exception.IFastApiException;
+import com.missfresh.api.exception.MissfreshApiException;
 
 /**
  * <pre>
  *
  * </pre>
- * <small> 2018/8/30 19:10 | Aron</small>
+ * <small> 2018/8/30 19:10 | caigl@missfresh.cn</small>
  */
 public interface SmsSender {
 
@@ -14,11 +14,11 @@ public interface SmsSender {
      * <pre>
      * 根据产品id、手机号码发送短信,发送失败将抛出异常
      * </pre>
-     * <small> 2018/8/30 19:13 | Aron</small>
+     * <small> 2018/8/30 19:13 | caigl@missfresh.cn</small>
      * @param mobile 目标手机号码,如果是多个手机号，请英文逗号","分隔
      * @param code 验证码，如果不需要则传null
      * @param scene 发送的短信内容场景值
      */
-    void send(String mobile, String code, String scene) throws IFastApiException;
+    void send(String mobile, String code, String scene) throws MissfreshApiException;
 
 }

@@ -37,7 +37,7 @@ import com.missfresh.sys.vo.UserVO;
  * <pre>
  * </pre>
  * 
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @RequestMapping("/sys/user")
 @Controller

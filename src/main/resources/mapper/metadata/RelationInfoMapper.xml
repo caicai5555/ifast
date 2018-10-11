@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.missfresh.metadata.dao.RelationInfoDao">
+
+
+    <select id="getDependents"  parameterType="java.lang.String" resultType="java.util.Map">
+
+        select a.child as child ,a.table_name as tableName,b.parent as parent
+        from (
+                 SELECT group_concat(concat(target_db_name,".",target_table_name)) as child,concat(source_db_name,".",source_table_name) as table_name
+                 FROM relation_info where  concat(source_db_name,".",source_table_name) in( #{tableNames} ) group by source_db_name  ,source_table_name
+             ) a
+            left join
+            (
+                  select group_concat(concat(source_db_name,".",source_table_name)) as parent ,concat(target_db_name,".",target_table_name) as table_name
+                  FROM relation_info where  concat(target_db_name,".",target_table_name) in(#{tableNames} )  group by target_db_name,target_table_name
+              ) b
+             on a.table_name=b.table_name
+    </select>
+
+    <select id="getParentTable"  parameterType="java.lang.String" resultType="java.util.Map">
+        select group_concat(concat(source_db_name,".",source_table_name)) as parent ,concat(target_db_name,".",target_table_name) as table_name
+        FROM relation_info where  concat(target_db_name,".",target_table_name) in(${_parameter})  and source_table_name is not null group by target_db_name,target_table_name
+
+    </select>
+
+    <select id="getChlidTable"  parameterType="java.lang.String" resultType="java.util.Map">
+        select group_concat(concat(target_db_name,".",target_table_name)) as child ,concat(source_db_name,".",source_table_name) as table_name
+        FROM relation_info where  concat(source_db_name,".",source_table_name) in(${_parameter}) and target_table_name is not null and target_type!='mysql' group by source_db_name,source_table_name
+
+    </select>
+
+
+
+
+
+
+
+</mapper>

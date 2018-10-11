@@ -21,7 +21,7 @@ import java.util.Arrays;
  * <pre>
  * 基础表
  * </pre>
- * <small> 2018-07-27 23:38:24 | Aron</small>
+ * <small> 2018-07-27 23:38:24 | caigl@missfresh.cn</small>
  */
 @Controller
 @RequestMapping("/demo/demoBase")

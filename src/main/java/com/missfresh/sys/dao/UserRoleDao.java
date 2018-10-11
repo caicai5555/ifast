@@ -11,7 +11,7 @@ import com.missfresh.sys.domain.UserRoleDO;
  * <pre>
  * 用户与角色对应关系
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 public interface UserRoleDao extends BaseDao<UserRoleDO> {
 

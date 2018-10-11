@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @TableName("sys_task")
 @Data

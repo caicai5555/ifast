@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
  * 测试专用
  * </pre>
  * 
- * <small> 2018年1月16日 | Aron</small>
+ * <small> 2018年1月16日 | caigl@missfresh.cn</small>
  */
 @RestController
 @RequestMapping("/test")
@@ -36,13 +36,13 @@ public class TestController {
         Set<String> keys = stringRedisTemplate.keys("*");
         System.out.println(keys);
         ValueOperations<String, String> stringStringValueOperations = stringRedisTemplate.opsForValue();
-        stringStringValueOperations.set("Aron", "hello Aron.");
-        String aron = stringStringValueOperations.get("Aron");
+        stringStringValueOperations.set("caigl@missfresh.cn", "hello caigl@missfresh.cn.");
+        String aron = stringStringValueOperations.get("caigl@missfresh.cn");
         System.out.println(aron);
 
-        Long expire = stringRedisTemplate.getExpire("Aron");
-        Long expire2 = stringRedisTemplate.getExpire("Aron", TimeUnit.MICROSECONDS);
-        Long expire3 = stringRedisTemplate.getExpire("Aron", TimeUnit.SECONDS);
+        Long expire = stringRedisTemplate.getExpire("caigl@missfresh.cn");
+        Long expire2 = stringRedisTemplate.getExpire("caigl@missfresh.cn", TimeUnit.MICROSECONDS);
+        Long expire3 = stringRedisTemplate.getExpire("caigl@missfresh.cn", TimeUnit.SECONDS);
         System.out.println(expire);
         System.out.println(expire2);
         System.out.println(expire3);

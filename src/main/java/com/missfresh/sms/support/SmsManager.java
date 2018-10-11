@@ -1,6 +1,6 @@
 package com.missfresh.sms.support;
 
-import com.missfresh.api.exception.IFastApiException;
+import com.missfresh.api.exception.MissfreshApiException;
 import com.missfresh.common.type.EnumErrorCode;
 import com.missfresh.sms.config.SmsBasicConfigProperties;
 import org.apache.commons.lang3.StringUtils;
@@ -14,7 +14,7 @@ import java.util.Random;
  * <pre>
  *
  * </pre>
- * <small> 2018/8/31 16:45 | Aron</small>
+ * <small> 2018/8/31 16:45 | caigl@missfresh.cn</small>
  */
 public class SmsManager implements SmsVerify {
 
@@ -51,7 +51,7 @@ public class SmsManager implements SmsVerify {
         String key = properties.getCacheKeyPrefix() + ":" + mobile;
         Cache.ValueWrapper valueWrapper = cache.get(key);
         if (valueWrapper == null || !valueWrapper.get().equals(code)) {
-            throw new IFastApiException(EnumErrorCode.apiSmsCodeInvalid.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiSmsCodeInvalid.getCodeStr());
         }
 
         // 移除缓存

@@ -10,7 +10,7 @@ import com.baomidou.mybatisplus.annotations.TableName;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @TableName("sys_role")
 public class RoleDO implements Serializable {

@@ -20,7 +20,7 @@ import java.util.Arrays;
  * 定时任务
  * </pre>
  *
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @Controller
 @RequestMapping("/common/job")

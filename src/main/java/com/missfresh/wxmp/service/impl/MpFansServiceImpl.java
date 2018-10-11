@@ -12,7 +12,7 @@ import com.missfresh.common.base.CoreServiceImpl;
  * <pre>
  * 微信粉丝表
  * </pre>
- * <small> 2018-04-11 23:27:06 | Aron</small>
+ * <small> 2018-04-11 23:27:06 | caigl@missfresh.cn</small>
  */
 @Service
 public class MpFansServiceImpl extends CoreServiceImpl<MpFansDao, MpFansDO> implements MpFansService {

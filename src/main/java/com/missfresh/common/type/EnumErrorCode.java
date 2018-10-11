@@ -4,7 +4,7 @@ package com.missfresh.common.type;
  * <pre>
  * 全局异常码
  * </pre>
- * <small> 2018年4月5日 | Aron</small>
+ * <small> 2018年4月5日 | caigl@missfresh.cn</small>
  */
 public enum EnumErrorCode {
 
@@ -90,7 +90,7 @@ public enum EnumErrorCode {
      * <pre>
      * </pre>
      * 
-     * <small> Aron | 2017-09-05</small>
+     * <small> caigl@missfresh.cn | 2017-09-05</small>
      * 
      * @param args
      */

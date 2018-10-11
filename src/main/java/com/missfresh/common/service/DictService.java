@@ -11,7 +11,7 @@ import com.missfresh.sys.domain.UserDO;
  * 数据字典
  * </pre>
  * 
- * <small> 2018年1月3日 | Aron</small>
+ * <small> 2018年1月3日 | caigl@missfresh.cn</small>
  */
 public interface DictService extends CoreService<DictDO> {
     

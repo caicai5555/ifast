@@ -12,7 +12,7 @@ import com.missfresh.sys.domain.MenuDO;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @Service
 public interface MenuService extends CoreService<MenuDO> {

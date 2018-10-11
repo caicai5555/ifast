@@ -19,7 +19,7 @@ import com.missfresh.job.service.JobService;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @Service
 public class JobServiceImpl extends CoreServiceImpl<TaskDao, TaskDO> implements JobService {

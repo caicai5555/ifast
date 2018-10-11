@@ -10,7 +10,7 @@ import com.missfresh.sys.domain.RoleMenuDO;
  * <pre>
  * 角色与菜单对应关系
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 public interface RoleMenuDao extends BaseDao<RoleMenuDO> {
 	

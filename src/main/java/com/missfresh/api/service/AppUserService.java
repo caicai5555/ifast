@@ -7,7 +7,7 @@ import com.missfresh.sys.domain.UserDO;
 /**
  * <pre>
  * </pre>
- * <small> 2018年4月27日 | Aron</small>
+ * <small> 2018年4月27日 | caigl@missfresh.cn</small>
  */
 public interface AppUserService extends CoreService<UserDO> {
     /** 申请token */

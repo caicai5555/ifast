@@ -9,7 +9,7 @@ import com.auth0.jwt.exceptions.TokenExpiredException;
 import com.auth0.jwt.interfaces.Claim;
 import com.auth0.jwt.interfaces.DecodedJWT;
 import com.missfresh.api.config.JWTConfigProperties;
-import com.missfresh.api.exception.IFastApiException;
+import com.missfresh.api.exception.MissfreshApiException;
 import com.missfresh.common.type.EnumErrorCode;
 import com.missfresh.common.utils.SpringContextHolder;
 import org.apache.shiro.authc.AuthenticationException;
@@ -25,7 +25,7 @@ import java.util.Date;
  * jwt工具类
  * </pre>
  * 
- * <small> 2018年4月28日 | Aron</small>
+ * <small> 2018年4月28日 | caigl@missfresh.cn</small>
  */
 public class JWTUtil {
 
@@ -37,7 +37,7 @@ public class JWTUtil {
      * <pre>
      * </pre>
      * 
-     * <small> 2018年4月28日 | Aron</small>
+     * <small> 2018年4月28日 | caigl@missfresh.cn</small>
      * 
      * @param token
      *            即jwt
@@ -59,7 +59,7 @@ public class JWTUtil {
             throw new AuthenticationException(EnumErrorCode.apiAuthorizationInvalid.getMsg());
         }catch (Exception exception3){
             log.info("token 签名校验失败：{}", token);
-            throw new IFastApiException(EnumErrorCode.apiAuthorizationInvalid.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiAuthorizationInvalid.getCodeStr());
         }
     }
 
@@ -75,7 +75,7 @@ public class JWTUtil {
      * 获得token中的信息无需secret解密也能获得
      * </pre>
      * 
-     * <small> 2018年4月28日 | Aron</small>
+     * <small> 2018年4月28日 | caigl@missfresh.cn</small>
      * 
      * @param token token
      */
@@ -94,7 +94,7 @@ public class JWTUtil {
      * <pre>
      * </pre>
      * 
-     * <small> 2018年4月28日 | Aron</small>
+     * <small> 2018年4月28日 | caigl@missfresh.cn</small>
      * 
      * @param userId 用户标识
      * @param secret 加密密钥
@@ -106,14 +106,14 @@ public class JWTUtil {
             Algorithm algorithm = Algorithm.HMAC256(secret);
             return JWT.create().withClaim(userPrimaryKey, userId).withExpiresAt(date).sign(algorithm);
         } catch (UnsupportedEncodingException e) {
-            throw new IFastApiException(EnumErrorCode.apiAuthorizationSignFailed.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiAuthorizationSignFailed.getCodeStr());
         }
     }
     /**
      * <pre>
      * </pre>
      *
-     * <small> 2018年4月28日 | Aron</small>
+     * <small> 2018年4月28日 | caigl@missfresh.cn</small>
      *
      * @param userId 用户标识
      * @param secret 加密密钥

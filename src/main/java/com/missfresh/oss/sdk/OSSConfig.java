@@ -7,7 +7,7 @@ import lombok.Data;
  * 七牛对象存储配置
  * </pre>
  * 
- * <small> 2018年4月6日 | Aron</small>
+ * <small> 2018年4月6日 | caigl@missfresh.cn</small>
  */
 @Data
 public class OSSConfig {

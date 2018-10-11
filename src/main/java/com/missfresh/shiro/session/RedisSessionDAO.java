@@ -6,7 +6,7 @@ import org.apache.shiro.session.mgt.eis.EnterpriseCacheSessionDAO;
  * <pre>
  *
  * </pre>
- * <small> 2018/8/21 16:29 | Aron</small>
+ * <small> 2018/8/21 16:29 | caigl@missfresh.cn</small>
  */
 public class RedisSessionDAO extends EnterpriseCacheSessionDAO {
 

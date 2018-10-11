@@ -1,6 +1,6 @@
 package com.missfresh.common.exception.handler;
 
-import com.missfresh.api.exception.IFastApiException;
+import com.missfresh.api.exception.MissfreshApiException;
 import com.missfresh.common.exception.IFastException;
 import com.missfresh.common.type.EnumErrorCode;
 import com.missfresh.common.utils.HttpContextUtils;
@@ -38,8 +38,8 @@ public class ApplicationExceptionHandler {
     /**
      * API异常
      */
-    @ExceptionHandler(IFastApiException.class)
-    public Result<String> handleIFastAPIException(IFastApiException e) {
+    @ExceptionHandler(MissfreshApiException.class)
+    public Result<String> handleIFastAPIException(MissfreshApiException e) {
         return getStringResult(e.getMessage());
     }
 

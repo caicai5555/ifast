@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
  * <pre>
  *
  * </pre>
- * <small> 2018/8/30 19:27 | Aron</small>
+ * <small> 2018/8/30 19:27 | caigl@missfresh.cn</small>
  */
 @Component
 @ConfigurationProperties(prefix = "ifast.sms")

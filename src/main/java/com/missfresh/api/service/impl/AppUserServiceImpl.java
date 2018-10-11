@@ -1,7 +1,7 @@
 package com.missfresh.api.service.impl;
 
 import com.missfresh.api.config.JWTConfigProperties;
-import com.missfresh.api.exception.IFastApiException;
+import com.missfresh.api.exception.MissfreshApiException;
 import com.missfresh.api.pojo.vo.TokenVO;
 import com.missfresh.api.service.AppUserService;
 import com.missfresh.api.util.JWTUtil;
@@ -21,7 +21,7 @@ import org.springframework.stereotype.Service;
  * <pre>
  * </pre>
  *
- * <small> 2018年4月27日 | Aron</small>
+ * <small> 2018年4月27日 | caigl@missfresh.cn</small>
  */
 @Service
 public class AppUserServiceImpl extends CoreServiceImpl<UserDao, UserDO> implements AppUserService {
@@ -36,7 +36,7 @@ public class AppUserServiceImpl extends CoreServiceImpl<UserDao, UserDO> impleme
     public TokenVO getToken(String username, String passwd) {
 		UserDO user = findOneByKv("username", username);
 		if (null == user || !user.getPassword().equals(MD5Utils.encrypt(username, passwd))) {
-            throw new IFastApiException(EnumErrorCode.apiAuthorizationLoginFailed.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiAuthorizationLoginFailed.getCodeStr());
         }
         return createToken(user);
     }
@@ -53,7 +53,7 @@ public class AppUserServiceImpl extends CoreServiceImpl<UserDao, UserDO> impleme
 
         UserDO user = findOneByKv("username", uname);
         if(user == null){
-            throw new IFastApiException(EnumErrorCode.apiAuthorizationInvalid.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiAuthorizationInvalid.getCodeStr());
         }
 
 		return createToken(user);
@@ -85,7 +85,7 @@ public class AppUserServiceImpl extends CoreServiceImpl<UserDao, UserDO> impleme
             throw new IFastException(EnumErrorCode.apiAuthorizationInvalid.getCodeStr());
         }
         if(Holder.logoutTokens.get(token) != null){
-            throw new IFastApiException(EnumErrorCode.apiAuthorizationLoggedout.getCodeStr());
+            throw new MissfreshApiException(EnumErrorCode.apiAuthorizationLoggedout.getCodeStr());
         }
 
         UserDO userDO = selectById(userId);

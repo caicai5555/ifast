@@ -17,7 +17,7 @@ import java.util.Arrays;
  * 日志
  * </pre>
  * 
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @RequestMapping("/common/log")
 @Controller

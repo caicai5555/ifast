@@ -4,7 +4,7 @@ package com.missfresh.generator.type;
  * <pre>
  * </pre>
  * 
- * <small> 2018年5月30日 | Aron</small>
+ * <small> 2018年5月30日 | caigl@missfresh.cn</small>
  */
 public class EnumGen {
     public static enum KvType {

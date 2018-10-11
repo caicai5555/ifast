@@ -11,7 +11,7 @@ import java.util.Map;
  * 通用业务层实现
  * </pre>
  * 
- * <small> 2018年1月9日 | Aron</small>
+ * <small> 2018年1月9日 | caigl@missfresh.cn</small>
  * 
  * @param <T>
  */
@@ -25,7 +25,7 @@ public interface CoreService<T> extends IService<T> {
      *
      * </pre>
      *
-     * <small> 2018/6/14 17:32 | Aron</small>
+     * <small> 2018/6/14 17:32 | caigl@missfresh.cn</small>
      * @param [clazz, param]
      * @return java.util.Map<java.lang.String,java.lang.Object>
      *
@@ -38,7 +38,7 @@ public interface CoreService<T> extends IService<T> {
      *
      * </pre>
      *
-     * <small> 2018/6/14 17:14 | Aron</small>
+     * <small> 2018/6/14 17:14 | caigl@missfresh.cn</small>
      * @param [clazz, params]
      * @return java.util.Map<java.lang.String,java.lang.Object>
      *

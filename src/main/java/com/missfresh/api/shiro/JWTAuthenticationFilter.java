@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * <pre>
  * </pre>
- * <small> 2018年4月22日 | Aron</small>
+ * <small> 2018年4月22日 | caigl@missfresh.cn</small>
  */
 public class JWTAuthenticationFilter extends BasicHttpAuthenticationFilter {
 

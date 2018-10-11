@@ -4,7 +4,7 @@ package com.missfresh.generator.domain;
  * <pre>
  * 列的属性
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 public class ColumnDO {
     // 列名

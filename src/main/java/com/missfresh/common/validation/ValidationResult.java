@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * 
- * @author Aron
+ * @author caigl@missfresh.cn
  * @date 2017年8月4日
  */
 public class ValidationResult {

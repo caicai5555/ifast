@@ -4,7 +4,7 @@ package com.missfresh.sms.support;
  * <pre>
  *
  * </pre>
- * <small> 2018/8/31 11:48 | Aron</small>
+ * <small> 2018/8/31 11:48 | caigl@missfresh.cn</small>
  */
 public interface SmsVerify {
 
@@ -12,7 +12,7 @@ public interface SmsVerify {
      * <pre>
      * 校验验证码
      * </pre>
-     * <small> 2018/8/30 19:14 | Aron</small>
+     * <small> 2018/8/30 19:14 | caigl@missfresh.cn</small>
      * @param phone 手机号码
      * @param code 验证码
      */

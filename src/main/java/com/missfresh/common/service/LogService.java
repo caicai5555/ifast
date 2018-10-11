@@ -8,7 +8,7 @@ import com.missfresh.common.domain.LogDO;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月22日 | Aron</small>
+ * <small> 2018年3月22日 | caigl@missfresh.cn</small>
  */
 @Service
 public interface LogService extends CoreService<LogDO> {

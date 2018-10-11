@@ -3,14 +3,14 @@ package com.missfresh.common.config;
 /**
  * <pre>
  * </pre>
- * <small> 2018年4月6日 | Aron</small>
+ * <small> 2018年4月6日 | caigl@missfresh.cn</small>
  */
 public class Constant {
 
     /**
      * <pre>
      * </pre>
-     * <small> 2018年4月6日 | Aron</small>
+     * <small> 2018年4月6日 | caigl@missfresh.cn</small>
      */
     public static class Job {
         // 停止计划任务
@@ -24,7 +24,7 @@ public class Constant {
     /**
      * <pre>
      * </pre>
-     * <small> 2018年4月6日 | Aron</small>
+     * <small> 2018年4月6日 | caigl@missfresh.cn</small>
      */
     public static class Generator {
         // 自动去除表前缀

@@ -6,7 +6,7 @@ package com.missfresh.common.utils;
  * 自定义响应结构
  * </pre>
  * 
- * @author Aron
+ * @author caigl@missfresh.cn
  * @date 2017年5月9日
  */
 public class Result<T> {

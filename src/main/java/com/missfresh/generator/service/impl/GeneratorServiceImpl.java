@@ -16,7 +16,7 @@ import com.missfresh.generator.service.GeneratorService;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @Service
 public class GeneratorServiceImpl implements GeneratorService {

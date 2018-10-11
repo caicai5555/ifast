@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ifast" />
+        <module name="missfresh-data-platform" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ifast" target="1.8" />
+      <module name="missfresh-data-platform" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

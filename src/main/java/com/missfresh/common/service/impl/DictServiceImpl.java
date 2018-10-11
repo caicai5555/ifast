@@ -14,7 +14,7 @@ import java.util.Objects;
 /**
  * <pre>
  * </pre>
- * <small> 2018年3月23日 | Aron</small>
+ * <small> 2018年3月23日 | caigl@missfresh.cn</small>
  */
 @Service
 public class DictServiceImpl extends CoreServiceImpl<DictDao, DictDO> implements DictService {

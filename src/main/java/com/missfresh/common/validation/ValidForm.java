@@ -6,7 +6,7 @@ import java.lang.annotation.*;
  * <pre>
  * 自动表单验注解
  * </pre>
- * <small> 2018/9/4 12:00 | Aron</small>
+ * <small> 2018/9/4 12:00 | caigl@missfresh.cn</small>
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
